@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 
-public internal extension NSCoder {
+public extension NSCoder {
     /**
      Encodes a `UIColor` without the need to manaually archive it every time.
      */
