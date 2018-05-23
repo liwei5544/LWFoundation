@@ -1,15 +1,11 @@
 //
 //  NSDecoder+UIColor.swift
-//  RadioButton
-//
-//  Created by Ben Morrison on 25/3/18.
-//  Copyright © 2018 Benjamin C Morrison. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
 
-internal extension NSCoder {
+public internal extension NSCoder {
     /**
      Encodes a `UIColor` without the need to manaually archive it every time.
      */

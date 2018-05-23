@@ -1,13 +1,9 @@
 //
 //  UIButton_Extend.swift
-//  TPCCNOA
-//
-//  Created by 玮 李 on 2018/4/18.
-//  Copyright © 2018年 玮 李. All rights reserved.
-//
+
 
 import UIKit
-extension UIButton {
+public extension UIButton {
     
     @objc func set(image anImage: UIImage?, title: String,
                    titlePosition: UIViewContentMode, additionalSpacing: CGFloat, state: UIControlState){

@@ -1,17 +1,13 @@
 
 //
 //  TKRequest.swift
-//  SpellingChecker
-//
-//  Created by 玮 李 on 2017/4/6.
-//  Copyright © 2017年 玮 李. All rights reserved.
-//
+
 
 
 import UIKit
 import Alamofire
 import ObjectMapper
-class NetRequest: NSObject {
+public class NetRequest: NSObject {
     
     /// 封装带获取Token的网络请求
     ///
@@ -22,7 +18,7 @@ class NetRequest: NSObject {
     ///   - completeHandle: 成功报200-300后向外传值value
     ///   - message: 失败向外传值msg
     ///   - failed: 超时等不返回statuscode的情况
-    class func tkAndRequest(_ url:String, par:Any?, method:HTTPMethod,completeHandle:@escaping (_ JSONString: Any?)->Void,failed:@escaping (_ error: Error?) ->()){
+    public class func tkAndRequest(_ url:String, par:Any?, method:HTTPMethod,completeHandle:@escaping (_ JSONString: Any?)->Void,failed:@escaping (_ error: Error?) ->()){
         //超时时间
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 10
@@ -47,7 +43,7 @@ class NetRequest: NSObject {
         
     }
     //========以上是请求========//
-    class func tkAndRequestHtml(_ url:String, par:Any?, method:HTTPMethod,completeHandle:@escaping (_ JSONString: Any?)->Void,failed:@escaping (_ error: Error?) ->()){
+    public class func tkAndRequestHtml(_ url:String, par:Any?, method:HTTPMethod,completeHandle:@escaping (_ JSONString: Any?)->Void,failed:@escaping (_ error: Error?) ->()){
         //超时时间
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest =  10
@@ -79,7 +75,7 @@ class NetRequest: NSObject {
         
     }
     
-    class func saveCookies(url:URL) {
+    public class func saveCookies(url:URL) {
         if let cookies = HTTPCookieStorage.shared.cookies(for: url) {
             let data = NSKeyedArchiver.archivedData(withRootObject: cookies)
             UserDefaults.standard.set(data, forKey: "HttpCookies")

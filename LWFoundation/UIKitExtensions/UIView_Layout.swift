@@ -1,14 +1,10 @@
 //
 //  UIView_Layout.swift
-//  <https://github.com/snail-z/OverlayController-Swift.git>
-//
-//  Created by zhanghao on 2017/2/24.
-//  Copyright © 2017年 zhanghao. All rights reserved.
-//
+
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     var x : CGFloat {
         get{ return self.frame.origin.x }
         set(x) {

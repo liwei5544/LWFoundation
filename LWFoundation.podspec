@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LWFoundation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.swift_version = "4.1"
   s.summary      = "项目基本库"
 

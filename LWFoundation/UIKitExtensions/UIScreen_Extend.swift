@@ -1,14 +1,10 @@
 //
 //  UIScreen_Extend.swift
-//  <https://github.com/snail-z/OverlayController-Swift.git>
-//
-//  Created by zhanghao on 2017/2/24.
-//  Copyright © 2017年 zhanghao. All rights reserved.
-//
+
 
 import UIKit
 
-extension UIScreen {
+public extension UIScreen {
     static var width : CGFloat  {
         return UIScreen.main.bounds.size.width
     }
@@ -22,7 +18,7 @@ extension UIScreen {
         return CGSize(width: height, height: width)
     }
 }
-extension UIDevice {
+public extension UIDevice {
     public func isX() -> Bool {
         if UIScreen.main.bounds.height == 812 {
             return true

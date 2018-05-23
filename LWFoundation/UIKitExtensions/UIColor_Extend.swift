@@ -1,14 +1,10 @@
 //
 //  UIColor_Layout.swift
-//  <https://github.com/snail-z/OverlayController-Swift.git>
-//
-//  Created by zhanghao on 2017/2/24.
-//  Copyright © 2017年 zhanghao. All rights reserved.
-//
+
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     convenience init?(hex:String) {
         guard hex.count>=6 else {
