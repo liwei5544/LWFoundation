@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LWFoundation"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.swift_version = "4.1"
   s.summary      = "项目基本库"
 
@@ -92,8 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LWFoundation/NetWork/*.swift"
-  s.source_files  = "LWFoundation/UIKitExtensions/*.swift"
+  s.source_files  = "LWFoundation/NetWork/*.swift","LWFoundation/UIKitExtensions/*.swift"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -135,12 +134,9 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Alamofire"
+
+ s.dependency "Alamofire"
 s.dependency "ObjectMapper"
-s.dependency "MJRefresh"
-s.dependency "Toast"
-s.dependency "SDWebImage"
-s.dependency "IQKeyboardManagerSwift"
-s.dependency "SnapKit"
+
 
 end
